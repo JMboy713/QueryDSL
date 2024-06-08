@@ -7,11 +7,11 @@ spring:
 
     jpa:
       hibernate:
-        ddl-auto: update
+        ddl-auto: create
       properties:
         hibernate:
 #          show-sql: true
-          format_sql: trues
+          format_sql: true
 logging:
   level:
     org.hibernate.SQL: debug
