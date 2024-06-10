@@ -20,7 +20,6 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.PersistenceUnit;
 import jakarta.transaction.Transactional;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +27,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static com.inflearn.querydsl.entity.QMember.*;
+import static com.inflearn.querydsl.entity.QMember.member;
 import static com.inflearn.querydsl.entity.QTeam.team;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @Transactional
@@ -76,6 +75,7 @@ public class QuerydslBasicTest {
     @Test
     public void startQuerydsl() {
         // member1을 찾아라
+
         QMember m = new QMember("m");
 //        QMember m = member;
 
