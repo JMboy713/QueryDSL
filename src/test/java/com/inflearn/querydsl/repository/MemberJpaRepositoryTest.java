@@ -2,9 +2,7 @@ package com.inflearn.querydsl.repository;
 
 import com.inflearn.querydsl.dto.MemberSearchCondition;
 import com.inflearn.querydsl.dto.MemberTeamDto;
-import com.inflearn.querydsl.dto.QMemberTeamDto;
 import com.inflearn.querydsl.entity.Member;
-import com.querydsl.core.types.dsl.BooleanExpression;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
@@ -13,9 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static com.inflearn.querydsl.entity.QMember.member;
-import static com.inflearn.querydsl.entity.QTeam.team;
 import static org.assertj.core.api.Assertions.assertThat;
+
 ;
 
 @SpringBootTest
@@ -79,7 +76,7 @@ class MemberJpaRepositoryTest {
 
     }
 
-    @Test
+
 
 
 }
